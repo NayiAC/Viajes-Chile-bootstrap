@@ -1,37 +1,31 @@
 .attestation {
-  display: flex;
-  flex-direction: row;
-  flex: wrap;
   justify-content: center;
   align-items: center;
-padding-top: 2rem;
-padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .attest {
-  display: flex;
-  flex-direction: column;
-width: 20rem;
-height: 20rem;
-align-items: center;
-justify-content: center;
-padding-left: 1rem;
-padding-right: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
-&__txt {
-  text-align: center;
-  font-style: italic;
-}
+  &__txt {
+    text-align: center;
+    font-style: italic;
+  }
 
-&__img {
-  height: 60px;
-  border-radius: 50%;
-  aspect-ratio: 1;
-  border: 1px solid white;
+  &__img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid white;
 
-}
+  }
 
-&__name {
-padding-top: 1rem;
-}
+  &__name {
+    padding-top: 1rem;
+  }
 }

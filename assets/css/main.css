@@ -11979,9 +11979,6 @@ html, body {
 }
 
 .attestation {
-  display: flex;
-  flex-direction: row;
-  flex: wrap;
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
@@ -11989,10 +11986,6 @@ html, body {
 }
 
 .attest {
-  display: flex;
-  flex-direction: column;
-  width: 20rem;
-  height: 20rem;
   align-items: center;
   justify-content: center;
   padding-left: 1rem;
@@ -12004,8 +11997,10 @@ html, body {
 }
 .attest__img {
   height: 60px;
+  width: 60px;
   border-radius: 50%;
-  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 1px solid white;
 }
 .attest__name {

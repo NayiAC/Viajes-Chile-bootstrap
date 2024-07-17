@@ -1,3 +1,19 @@
+//Para hacer que el navbar cambie de color onScroll
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 50) {
+      $("nav").css({
+          "background-color": "#212429",
+          transition: "all ease-in-out .3s",
+      });
+  } else {
+      $("nav").css({
+          "background-color": "transparent",
+          transition: "all ease-in-out .3s",
+      });
+  }
+});
+
+
 //tooltip
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
@@ -23,6 +39,7 @@ if (alertTrigger) {
   })
 }
 
+
 //modal
 const myModal = document.getElementById('myModal')
 const myInput = document.getElementById('myInput')
@@ -30,4 +47,3 @@ const myInput = document.getElementById('myInput')
 myModal.addEventListener('shown.bs.modal', () => {
   myInput.focus()
 })
-
